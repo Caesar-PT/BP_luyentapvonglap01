@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = 1;
+    let n = 0;
+    let total;
+    let count = 0;
+    let sum = 0;
+    while ( count < 20) {
+        document.write( m + '<br>')
+        sum = sum + m;
+        total = m + n;
+        n = m;
+        m = total;
+        count++;
+    }
+    document.write('Sum: ' + sum);
+
+
+</script>
+
+</body>
+</html>

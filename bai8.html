@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h2>Game : Hãy thử đoán xem</h2>;
+    <input type="button" id=play value="Chơi" onclick="choi()">;
+</form>
+<script>
+    function choi() {
+        let i = 0;
+        do {
+            let min = parseInt(prompt('Nhập Min'));
+            let max = parseInt(prompt('Nhập Max'));
+            let a = parseInt(prompt('Nhập số trong khoảng Min Max'));
+            let b = Math.floor(Math.random() * max + min);
+            if (a === b) {
+                alert('Chúc mừng bạn đã chiến thắng');
+            } else if (a > b || a < b) {
+                alert('Bạn đã thua');
+            }
+            i++;
+        } while (i < 3);
+    }
+</script>
+</body>
+</html>

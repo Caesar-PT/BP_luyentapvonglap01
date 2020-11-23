@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = 1;
+    let n = 0;
+    let total;
+    let count = 0;
+    while ( count < 20) {
+        if (m%5 === 0) {
+            document.write('' + m);
+            break;
+        }
+        total = m + n;
+        n = m;
+        m = total;
+        count++;
+        }
+</script>
+
+</body>
+</html>
